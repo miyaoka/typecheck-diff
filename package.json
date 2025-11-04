@@ -1,0 +1,23 @@
+{
+  "name": "typecheck-diff",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "bin": {
+    "typecheck-diff": "./src/index.ts"
+  },
+  "scripts": {
+    "dev": "bun run ./src/index.ts",
+    "test": "bun test",
+    "typecheck": "tsc -p .",
+    "typecheck:diff": "./src/index.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.2.19",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "@commander-js/extra-typings": "14.0.0",
+    "commander": "14.0.0"
+  }
+}
